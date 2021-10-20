@@ -2,7 +2,8 @@
 
 const _ = require('lodash');
 const yup = require('yup');
-const { formatYupErrors, nameToSlug } = require('@strapi/utils');
+const { nameToSlug } = require('@strapi/utils');
+const { YupValidationError } = require('@strapi/utils').errors;
 const pluralize = require('pluralize');
 
 const { getService } = require('../../utils');
@@ -10,6 +11,10 @@ const { modelTypes, DEFAULT_TYPES, typeKinds } = require('../../services/constan
 const createSchema = require('./model-schema');
 const { removeEmptyDefaults, removeDeletedUIDTargetFields } = require('./data-transform');
 const { nestedComponentSchema } = require('./component');
+
+const handleYupError = error => {
+  throw new YupValidationError(error);
+};
 
 /**
  * Allowed relation per type kind
@@ -76,7 +81,7 @@ const validateContentTypeInput = data => {
       strict: true,
       abortEarly: false,
     })
-    .catch(error => Promise.reject(formatYupErrors(error)));
+    .catch(handleYupError);
 };
 
 /**
@@ -102,7 +107,7 @@ const validateUpdateContentTypeInput = data => {
       strict: true,
       abortEarly: false,
     })
-    .catch(error => Promise.reject(formatYupErrors(error)));
+    .catch(handleYupError);
 };
 
 const forbiddenContentTypeNameValidator = () => {
@@ -160,7 +165,7 @@ const validateKind = kind => {
     .string()
     .oneOf([typeKinds.SINGLE_TYPE, typeKinds.COLLECTION_TYPE])
     .validate(kind)
-    .catch(error => Promise.reject(formatYupErrors(error)));
+    .catch(handleYupError);
 };
 
 module.exports = {

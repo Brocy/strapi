@@ -54,32 +54,22 @@ describe('Content type validator', () => {
         },
       };
 
+      expect.assertions(1);
+
       await validateUpdateContentTypeInput(data).catch(err => {
         expect(err).toMatchObject({
-          'contentType.attributes.thisIsReserved': [
-            expect.stringMatching('Attribute keys cannot be one of'),
-          ],
-        });
-      });
-    });
-  });
-
-  describe('Prevents use of names without plural form', () => {
-    test('Throws when using name without plural form', async () => {
-      const data = {
-        contentType: {
-          name: 'news',
-          attributes: {
-            title: {
-              type: 'string',
-            },
+          name: 'ValidationError',
+          message: 'Attribute keys cannot be one of __component, __contentType, thisIsReserved',
+          details: {
+            errors: [
+              {
+                path: ['contentType', 'attributes', 'thisIsReserved'],
+                message:
+                  'Attribute keys cannot be one of __component, __contentType, thisIsReserved',
+                name: 'ValidationError',
+              },
+            ],
           },
-        },
-      };
-
-      await validateContentTypeInput(data).catch(err => {
-        expect(err).toMatchObject({
-          'contentType.name': [expect.stringMatching('cannot be pluralized')],
         });
       });
     });
