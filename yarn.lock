@@ -4617,15 +4617,15 @@
     tar "6.1.11"
     uuid "^3.3.2"
 
-"@strapi/icons@0.0.1-alpha.46":
-  version "0.0.1-alpha.46"
-  resolved "https://registry.yarnpkg.com/@strapi/icons/-/icons-0.0.1-alpha.46.tgz#81c4e64dc7c34bcb1b39c98b4bf46b2fe0b62eb7"
-  integrity sha512-0DbROqwut8ptcXvNkx1VQWMRs/xrH/BRNE5yEy5CJsGhLeCYzkMkZhkn4O6Rp5kFG4QkBDp2rreW9+d0VZi/TA==
+"@strapi/icons@0.0.1-alpha.49":
+  version "0.0.1-alpha.49"
+  resolved "https://registry.yarnpkg.com/@strapi/icons/-/icons-0.0.1-alpha.49.tgz#281cbc11046c9358e223e24cb35c010b8cdf3cff"
+  integrity sha512-23mKj9CoNRCj+6LW/fiaRWtKVINbsZOVJYyMTbLZcQv45TzB9tLvdAgLuECQicMSgdmnuhJtq8MIqkKvhw2eVg==
 
-"@strapi/parts@0.0.1-alpha.46":
-  version "0.0.1-alpha.46"
-  resolved "https://registry.yarnpkg.com/@strapi/parts/-/parts-0.0.1-alpha.46.tgz#f4cfd8a2fa864abbb158f89acf04d5edeb0b7db3"
-  integrity sha512-p/C68SrffjUOCtAXzp/FenTrzB7c0qrZkPsitFs2ckR4Nt9eaq+wEMdHcMHonQxxaTf2PPOtZWTnjXXpva21KA==
+"@strapi/parts@0.0.1-alpha.49":
+  version "0.0.1-alpha.49"
+  resolved "https://registry.yarnpkg.com/@strapi/parts/-/parts-0.0.1-alpha.49.tgz#139701dd9141f74d3e7a8abd4b535783f551032b"
+  integrity sha512-Ylfc5xzIChUE19pJptFOSp35iVpTnJjeWuHmOYWQrAR1LXHABfiUcnbB3xRcn/RekpSh/6dw4ep/cb/bIJLJPg==
   dependencies:
     "@internationalized/number" "^3.0.2"
     compute-scroll-into-view "^1.0.17"
@@ -7221,7 +7221,7 @@ bcrypt-pbkdf@^1.0.0, bcrypt-pbkdf@^1.0.2:
   dependencies:
     tweetnacl "^0.14.3"
 
-bcryptjs@^2.4.3:
+bcryptjs@2.4.3:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/bcryptjs/-/bcryptjs-2.4.3.tgz#9ab5627b93e60621ff7cdac5da9733027df1d0cb"
   integrity sha1-mrVie5PmBiH/fNrF2pczAn3x0Ms=
@@ -18491,22 +18491,17 @@ path-to-regexp@0.1.7:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
 
+path-to-regexp@6.2.0, path-to-regexp@^6.1.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.2.0.tgz#f7b3803336104c346889adece614669230645f38"
+  integrity sha512-f66KywYG6+43afgE/8j/GoiNyygk/bnoCbps++3ErRKsIYkGGupyv07R2Ok5m9i67Iqc+T2g1eAUGUPzWhYTyg==
+
 path-to-regexp@^1.7.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-1.8.0.tgz#887b3ba9d84393e87a0a0b9f4cb756198b53548a"
   integrity sha512-n43JRhlUKUAlibEJhPeir1ncUID16QnEjNpwzNdO3Lm4ywrBpBZ5oLD0I6br9evr1Y9JTqwRtAh7JLoOzAQdVA==
   dependencies:
     isarray "0.0.1"
-
-path-to-regexp@^3.1.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-3.2.0.tgz#fa7877ecbc495c601907562222453c43cc204a5f"
-  integrity sha512-jczvQbCUS7XmS7o+y1aEO9OBVFeZBQ1MDSEqmO7xSoPgOPoowY/SxLpZ6Vh97/8qHZOteiCKb7gkG9gA2ZUxJA==
-
-path-to-regexp@^6.1.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.2.0.tgz#f7b3803336104c346889adece614669230645f38"
-  integrity sha512-f66KywYG6+43afgE/8j/GoiNyygk/bnoCbps++3ErRKsIYkGGupyv07R2Ok5m9i67Iqc+T2g1eAUGUPzWhYTyg==
 
 path-type@^1.0.0:
   version "1.1.0"
