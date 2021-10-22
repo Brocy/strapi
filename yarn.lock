@@ -4603,12 +4603,15 @@
     store2 "^2.12.0"
 
 "@strapi/generate-new@3.6.8":
-  version "4.0.0-beta.3"
+  version "4.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@strapi/generate-new/-/generate-new-4.0.0-beta.4.tgz#18b0cccd2189f03573d82869947e9a213c6ad78b"
+  integrity sha512-YeaksbN0bzdW8KBLMIrE+D6KRSbHGXDZL2GNa+jXDahBMHKAuIrDx8ARkyN4k3m2oebheyh9GwRR+1LiWY0Dmg==
   dependencies:
     "@sentry/node" "6.3.0"
     chalk "^4.1.1"
     execa "^1.0.0"
     fs-extra "^9.1.0"
+    git-url-parse "^11.4.4"
     inquirer "^6.3.1"
     lodash "4.17.21"
     node-fetch "^2.6.1"
@@ -11903,7 +11906,7 @@ git-url-parse@11.4.4:
   dependencies:
     git-up "^4.0.0"
 
-git-url-parse@^11.1.2:
+git-url-parse@^11.1.2, git-url-parse@^11.4.4:
   version "11.6.0"
   resolved "https://registry.yarnpkg.com/git-url-parse/-/git-url-parse-11.6.0.tgz#c634b8de7faa66498a2b88932df31702c67df605"
   integrity sha512-WWUxvJs5HsyHL6L08wOusa/IXYtMuCAhrMmnTjQPpBU0TTHyDhnOATNH3xNQz7YOQUsqIIPTGr4xiVti1Hsk5g==
